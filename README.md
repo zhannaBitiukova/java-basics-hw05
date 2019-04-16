@@ -15,19 +15,20 @@ This is a homework for the Java Constructors
 7. Open test class, put your cursor on `@Test` annotation, press `Alt+Enter` 
     and choose `Add 'testng' to classpath`.  
 8. Set the value to `org.testng:testng:6.14.3` and mark checkbox `Download to`.
-9. Complete all TODO tasks. Do not change test class.
+9. Complete all TODO tasks. Do not change the test class.
 10. Uncomment `BirdTest` body and execute tests. 
 
 
 ## Birds assignment
 
-Develop abstract class Bird.
-Develop classes FlyingBird and NonFlyingBird.
+Develop base class Bird.
+Develop abstract classes FlyingBird and NonFlyingBird.
+FlyingBird should have method checkWings().
 Create class Eagle, Swallow, Penguin and Kiwi. 
-Implement methods in the Runner class:
- - print parametrized list of flying bird subtypes
- - add non flying bird to the list
- - adds bird to the list
+Implement methods in the Zoo class:
+ - add bird to the list
+ - feed different bird sections of the zoo
+ - add birds to a flying section of the zoo
 Uncomment tests and execute them.
 All test should pass.
 ```text
