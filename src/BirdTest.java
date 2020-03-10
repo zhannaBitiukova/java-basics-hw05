@@ -1,7 +1,9 @@
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,6 +36,20 @@ public class BirdTest {
   //  }
   //
   //  @Test
+  //  public void testAcceptDeclaration() {
+  //    Method[] methods = Zoo.class.getDeclaredMethods();
+  //    for (Method method : methods) {
+  //      if ("acceptBird".equals(method.getName())) {
+  //        Type[] types = method.getGenericParameterTypes();
+  //        assertTrue(types[0].getTypeName().contains("FlyingBird"),
+  //                "acceptBird() method has wrong 1st argument type");
+  //        assertTrue(types[0].getTypeName().contains("super"),
+  //                "acceptBird() method has wrong 1st argument type declaration, should use Generics");
+  //        System.out.println(types[0].getTypeName().contains("super"));
+  //      }
+  //    }
+  //  }
+  //  @Test
   //  public void testFeed() {
   //    List<Eagle> eagles = new ArrayList<>();
   //    eagles.add(new Eagle());
@@ -62,7 +78,7 @@ public class BirdTest {
   //
   //  @Test
   //  public void testAccept() {
-  //    List<FlyingBird> birds = new ArrayList<>();
+  //    List<Bird> birds = new ArrayList<>();
   //    Zoo.acceptBird(birds, new Eagle());
   //    Zoo.acceptBird(birds, new Swallow());
   //
