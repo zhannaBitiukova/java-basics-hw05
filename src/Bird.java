@@ -1,5 +1,7 @@
 public class Bird {
   // TODO fix class declaration
 
-  // TODO override toString method by returning a string with the class name
+  public void eat() {
+    // TODO print a message that bird is eating
+  }
 }
