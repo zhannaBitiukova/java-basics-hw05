@@ -1,9 +1,11 @@
 public abstract class Bird {
-  // TODO fix class declaration
   public Bird() {};
+  public String section = "Unknown";
+  public static void eat() {System.out.println("The bird is eating");}
 
-  public static void eat() {
-    // TODO print a message that bird is eating
-    System.out.println("The bird is eating");
+  public void setSection(String section){
+    this.section = section;
   }
+
+  public String getSection() { return section;}
 }
