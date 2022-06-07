@@ -74,7 +74,7 @@ public class BirdTest {
 
       assertEquals(kiwis.get(0).toString(), "Kiwi", TO_STRING_INCORRECT);
     }
-
+/*
     @Test
     public void testAccept() {
       List<Bird> birds = new ArrayList<>();
@@ -85,6 +85,8 @@ public class BirdTest {
 
       assertEquals(birds.get(1).toString(), "Swallow", TO_STRING_INCORRECT);
     }
+
+ */
 
     @Test
     public void testRegister() {
