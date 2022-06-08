@@ -8,20 +8,8 @@ public class Zoo {
    * @param list list of birds of particular type.
    */
   public static void feed(List<? extends Bird> list) {
-    System.out.print("Feeding birds");
+    System.out.print("Feeding birds: ");
     for (Object bird : list) {
-     /* String sect = bird.getSection();
-      if ( sect.equals("NonFlyingBird")) {
-
-      //if (bird.toString()) {
-        System.out.print(" - NonFlying section - " );
-      } else {
-        System.out.print(" - Flying section - " );
-      }
-*/
-
-     // System.out.println(": bird.toString= " + bird.toString());
-
      System.out.print(bird.toString() + " - " );
      Bird.eat();
     }
@@ -41,7 +29,7 @@ public class Zoo {
     for (Object eachBird : list) {
       System.out.print(" " + eachBird.toString() + ",");
     }
-    System.out.println("");
+    System.out.println();
   }
 
   /**
@@ -58,6 +46,6 @@ public class Zoo {
     for (Object eachBird : list) {
       System.out.print(" "+ eachBird.toString() + ",");
     }
-    System.out.println("");
+    System.out.println();
   }
 }
